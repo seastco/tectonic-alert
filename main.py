@@ -1,5 +1,6 @@
 import logging
 from alerts.handler import lambda_handler as alerts_handler
+from alerts.broadcast import lambda_handler as broadcast_handler
 from sms.handler import lambda_handler as sms_handler
 
 logger = logging.getLogger(__name__)
@@ -17,6 +18,8 @@ def lambda_handler(event, context):
             return {"statusCode": 400, "body": "No handler type specified"}
         if handler_type == "alerts":
             return alerts_handler(event, context)
+        elif handler_type == "broadcast":
+            return broadcast_handler(event, context)
         elif handler_type == "sms":
             return sms_handler(event, context)
         else:

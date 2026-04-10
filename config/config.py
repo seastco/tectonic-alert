@@ -23,8 +23,6 @@ class Config:
             "HAWAII_MAX_LATITUDE": os.getenv("HAWAII_MAX_LATITUDE", "22.750000"),
             "HAWAII_MIN_LONGITUDE": os.getenv("HAWAII_MIN_LONGITUDE", "-160.750000"),
             "HAWAII_MAX_LONGITUDE": os.getenv("HAWAII_MAX_LONGITUDE", "-154.000000"),
-            "VOLCANIC_COLOR_CODE": os.getenv("VOLCANIC_COLOR_CODE", "RED"),
-            "VOLCANIC_ALERT_LEVEL": os.getenv("VOLCANIC_ALERT_LEVEL", "WARNING"),
             "SECONDS_IN_PAST": os.getenv("SECONDS_IN_PAST", "601"),
             "ENVIRONMENT": os.getenv("ENVIRONMENT", "prod"),
             "TEST_SUBSCRIBERS": os.getenv("TEST_SUBSCRIBERS", "").split(","),
