@@ -18,10 +18,10 @@ def lambda_handler(event, context):
 
         if message == "SHEEBA":
             subscribers.add_subscriber(from_number)
-            resp.message("You have successfully subscribed to Tectonic Alert!")
+            resp.message("You have successfully subscribed to Earthquake Alert!")
         elif message == "UNSHEEBA":
             subscribers.remove_subscriber(from_number)
-            resp.message("You have unsubscribed from Tectonic Alert.")
+            resp.message("You have unsubscribed from Earthquake Alert.")
         else:
             # No-op
             return {"statusCode": 200}
