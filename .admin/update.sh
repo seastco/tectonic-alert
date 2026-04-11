@@ -3,7 +3,7 @@
 set -e
 
 # Set up variables
-PROJECT_DIR="/Users/stove/sources/tectonic-alert"
+PROJECT_DIR="/Users/stove/sources/earthquake-alert"
 PACKAGE_DIR="${PROJECT_DIR}/lambda_package"
 ZIP_FILE="${PROJECT_DIR}/lambda_package.zip"
 LAMBDA_FUNCTION_NAME="earthquakeAlert"
