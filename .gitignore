@@ -1,5 +1,6 @@
 admin
 lambda_package
+lambda_package.zip
 *.env
 *.swp
 venv/
